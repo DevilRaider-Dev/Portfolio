@@ -47,19 +47,19 @@ main {
 /* +++backgrounds+++ */
 
 main section:nth-child(1) {
-    background: url(assets/img/portfolio2.jpg) center/cover no-repeat;
+    background: url(./assets/img/portfolio2.jpg) center/cover no-repeat;
 }
 
 main section:nth-child(2) {
-    background: url(assets/img/portfolio3.png) center/cover no-repeat;
+    background: url(./assets/img/portfolio3.png) center/cover no-repeat;
 }
 
 main section:nth-child(3) {
-    background: url(assets/img/portfolio4.jpg) center/cover no-repeat;
+    background: url(./assets/img/portfolio4.jpg) center/cover no-repeat;
 }
 
 main section:nth-child(4) {
-    background: url(assets/img/portfolio5.png) center/cover no-repeat;
+    background: url(./assets/img/portfolio5.png) center/cover no-repeat;
 }
 
 main section article {
