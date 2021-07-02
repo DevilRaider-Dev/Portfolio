@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'DidactGothic';
+    src: url('/assets/fonts/DidactGothic-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'FjallaOne';
+    src: url('/assets/fonts/FjallaOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'WorkSans';
+    src: url('/assets/fonts/WorkSans-VariableFont_wght.ttf');
+}
+
+body {
+    min-width: 100vw;
+    margin: 0;
+}
+
+/* ---header content--- */
+
+header {
+    font-family: WorkSans;
+    text-align: center;
+}
+
+header p {
+    font-size: .7em;
+}
+
+header h2 {
+    line-height: 25px;
+    font-size: 3em;
+}
+
+header h1 {
+    font-size: 5em;
+}
+/* ---main content--- */
+main{
+    text-align: left;
+}
+/* +++backgrounds+++ */
+main section:nth-child(1){
+    background: url(/assets/img/portfolio2.jpg) center/cover no-repeat;
+}
+main section:nth-child(2){
+    background: url(/assets/img/portfolio3.png) center/cover no-repeat;
+}
+main section:nth-child(3){
+    background: url(/assets/img/portfolio4.jpg) center/cover no-repeat;
+}
+main section:nth-child(4){
+    background: url(/assets/img/portfolio5.png) center/cover no-repeat;
+}
+main section article{
+    padding: 10%;
+    font-family: DidactGothic;
+}
+main section article h1{
+    font-size: 3em;
+}
+main section article p{
+    color: #9e9e9e;
+}
+/* +++lösung mit pseudoklasse+++ */
+main section:nth-child(odd) {
+    color: white;
+}
+main section:nth-child(even) {
+    color: black;
+}
+main section:nth-child(odd) article a{
+    display:block;
+    width: 50px;
+    margin-top: 50px;
+    padding: 5px 10px;
+    font-size: .8em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid white;
+    color: white; 
+}
+main section:nth-child(even) article a{
+    display:block;
+    width: 50px;
+    margin-top: 50px;
+    padding: 5px 10px;
+    font-size: .8em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid black; 
+    color: black;
+}
+/* +++lösung mit klasse+++ +*/
+.diveIn{
+    cursor: pointer;
+}
+.diveInPage{
+    text-align: right;
+    font-family: FjallaOne;
+    font-size: 5em;
+    margin:0;
+}
+main section:nth-child(odd) article .diveIn:hover ~ .diveInPage{
+    color: white;
+}
+main section:nth-child(even) article .diveIn:hover ~ .diveInPage{
+    color: black;
+}
+
+footer section:first-child{
+    background-color: black;
+}
+footer section:last-child{
+    background-color: white;   
+}
