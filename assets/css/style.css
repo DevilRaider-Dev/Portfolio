@@ -37,42 +37,56 @@ header h2 {
 header h1 {
     font-size: 5em;
 }
+
 /* ---main content--- */
-main{
+
+main {
     text-align: left;
 }
+
 /* +++backgrounds+++ */
-main section:nth-child(1){
+
+main section:nth-child(1) {
     background: url(/assets/img/portfolio2.jpg) center/cover no-repeat;
 }
-main section:nth-child(2){
+
+main section:nth-child(2) {
     background: url(/assets/img/portfolio3.png) center/cover no-repeat;
 }
-main section:nth-child(3){
+
+main section:nth-child(3) {
     background: url(/assets/img/portfolio4.jpg) center/cover no-repeat;
 }
-main section:nth-child(4){
+
+main section:nth-child(4) {
     background: url(/assets/img/portfolio5.png) center/cover no-repeat;
 }
-main section article{
+
+main section article {
     padding: 10%;
     font-family: DidactGothic;
 }
-main section article h1{
+
+main section article h1 {
     font-size: 3em;
 }
-main section article p{
+
+main section article p {
     color: #9e9e9e;
 }
+
 /* +++lösung mit pseudoklasse+++ */
+
 main section:nth-child(odd) {
     color: white;
 }
+
 main section:nth-child(even) {
     color: black;
 }
-main section:nth-child(odd) article a{
-    display:block;
+
+main section:nth-child(odd) article a {
+    display: block;
     width: 50px;
     margin-top: 50px;
     padding: 5px 10px;
@@ -81,10 +95,11 @@ main section:nth-child(odd) article a{
     text-align: center;
     text-decoration: none;
     border: 1px solid white;
-    color: white; 
+    color: white;
 }
-main section:nth-child(even) article a{
-    display:block;
+
+main section:nth-child(even) article a {
+    display: block;
     width: 50px;
     margin-top: 50px;
     padding: 5px 10px;
@@ -92,74 +107,92 @@ main section:nth-child(even) article a{
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    border: 1px solid black; 
+    border: 1px solid black;
     color: black;
 }
+
 /* +++lösung mit klasse+++ +*/
-.diveIn{
+
+.diveIn {
     cursor: pointer;
 }
-.diveInPage{
+
+.diveInPage {
     text-align: right;
     font-family: FjallaOne;
     font-size: 5em;
-    margin:0;
+    margin: 0;
 }
-main section:nth-child(odd) article .diveIn:hover ~ .diveInPage{
+
+main section:nth-child(odd) article .diveIn:hover~.diveInPage {
     color: white;
 }
-main section:nth-child(even) article .diveIn:hover ~ .diveInPage{
+
+main section:nth-child(even) article .diveIn:hover~.diveInPage {
     color: black;
 }
-footer section:first-child{
+
+footer section:first-child {
     background-color: black;
     color: white;
 }
+
 footer section:first-child article {
     padding: 10%;
     font-family: DidactGothic;
 }
-footer section:first-child article h1{
+
+footer section:first-child article h1 {
     margin-top: 0;
     text-align: center;
     font-size: 6em;
 }
-footer section:first-child article p{
+
+footer section:first-child article p {
     padding-left: 40%;
     text-align: left;
     color: #9e9e9e;
 }
-footer section:first-child article a{
+
+footer section:first-child article a {
     padding-left: 40%;
     text-align: left;
     color: white;
     text-decoration: none;
     font-size: 2.5em;
 }
-footer section:last-child{
-    background-color: white; 
+
+footer section:last-child {
+    background-color: white;
 }
-footer section:last-child article{
+
+footer section:last-child article {
     margin: 5% 20%;
     text-align: center;
     font-size: 6em;
     font-family: DidactGothic;
 }
+
 footer section:last-child article ul li {
     list-style: none;
     padding: 5px 0;
 }
-footer section:last-child article ul li a{
-    text-decoration: none;  
+
+footer section:last-child article ul li a {
+    text-decoration: none;
     color: black;
 }
 
 /* --- heartbeat animation --- */
+
 .heart {
-	font-size: 50px;
-	animation: beat .50s infinite alternate;
-	transform-origin: center;
+    font-size: 50px;
+    animation: beat .50s infinite alternate;
+    transform-origin: center;
 }
-@keyframes beat{
-	to { transform: scale(1.2); }
+
+@keyframes beat {
+    to {
+        transform: scale(1.2);
+    }
 }
