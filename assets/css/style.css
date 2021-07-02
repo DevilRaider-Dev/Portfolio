@@ -161,6 +161,9 @@ footer section:first-child article a {
     text-decoration: none;
     font-size: 2.5em;
 }
+footer section:first-child article a:hover {
+    text-decoration: underline;
+}
 
 footer section:last-child {
     background-color: white;
@@ -181,6 +184,9 @@ footer section:last-child article ul li {
 footer section:last-child article ul li a {
     text-decoration: none;
     color: black;
+}
+footer section:last-child article ul li a:hover {
+    text-decoration: underline;
 }
 
 /* --- heartbeat animation --- */
