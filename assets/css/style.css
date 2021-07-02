@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'DidactGothic';
-    src: url('/assets/fonts/DidactGothic-Regular.ttf');
+    src: url('assets/fonts/DidactGothic-Regular.ttf');
 }
 
 @font-face {
     font-family: 'FjallaOne';
-    src: url('/assets/fonts/FjallaOne-Regular.ttf');
+    src: url('assets/fonts/FjallaOne-Regular.ttf');
 }
 
 @font-face {
     font-family: 'WorkSans';
-    src: url('/assets/fonts/WorkSans-VariableFont_wght.ttf');
+    src: url('assets/fonts/WorkSans-VariableFont_wght.ttf');
 }
 
 body {
@@ -97,6 +97,10 @@ main section:nth-child(odd) article a {
     border: 1px solid white;
     color: white;
 }
+main section:nth-child(odd) article a:hover {
+    background-color: white;
+    color: black;
+}
 
 main section:nth-child(even) article a {
     display: block;
@@ -109,6 +113,10 @@ main section:nth-child(even) article a {
     text-decoration: none;
     border: 1px solid black;
     color: black;
+}
+main section:nth-child(even) article a:hover {
+    background-color: black;
+    color: white;
 }
 
 /* +++lösung mit klasse+++ +*/
@@ -124,11 +132,11 @@ main section:nth-child(even) article a {
     margin: 0;
 }
 
-main section:nth-child(odd) article .diveIn:hover~.diveInPage {
+main section:nth-child(odd) article .diveIn:hover ~ .diveInPage {
     color: white;
 }
 
-main section:nth-child(even) article .diveIn:hover~.diveInPage {
+main section:nth-child(even) article .diveIn:hover ~ .diveInPage {
     color: black;
 }
 
@@ -178,7 +186,7 @@ footer section:last-child article {
 
 footer section:last-child article ul li {
     list-style: none;
-    padding: 5px 0;
+    padding: 5% 0;
 }
 
 footer section:last-child article ul li a {
