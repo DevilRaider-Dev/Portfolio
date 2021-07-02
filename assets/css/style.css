@@ -47,7 +47,7 @@ main {
 /* +++backgrounds+++ */
 
 main section:nth-child(1) {
-    background: url(https://devilraider-dev.github.io/Portfolio/assets/img/portfolio2.jpg) center/cover no-repeat;
+    background: url(/assets/img/portfolio2.jpg) center/cover no-repeat;
 }
 
 main section:nth-child(2) {
